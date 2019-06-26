@@ -1,3 +1,6 @@
+body{
+    margin:0px;
+}
 li ul{
     display: none;
 }
@@ -13,22 +16,43 @@ ul{
     float: left;
 }
 .subitem{
+    float:left;
+    width:150px;
     position:absolute;
     font-size:20px;
     background-color:#292929;
     color:white;    
 }
 .sub-subitem{
-    padding:10px 0px 10px 0px;
-    background-color: #292929;
-    font-size:20px;
+    padding:10px 0px 10px 20px;
+    background-color: salmon;
+    color:black;
+    font-size:18px;
+    width:200px;
     position:absolute;
     z-index:99;
-    left:170px;
+    left:190px;
     top:0px;
 }
-
-.cmcs{
+.cen{
+    height:110px;
+    position:absolute;
+    z-index:99;
+    left:150px;
+    top:1px;
+}
+#hn{
+    display:inline-block;
+}
+.navbar{
+    position:sticky;
+    top:0px;
+    z-index:3;
+    border:1px solid gainsboro;
+    height:60px;
+    background-color: white;
+}
+#cmcs{
     background-color:white;
     text-align:center;
     
@@ -37,6 +61,7 @@ ul{
     font-size:45px;
     font-family:Raleway;
     letter-spacing: 17px;
+    text-align: center;
 }
 #p1{
     font-size:20px;
@@ -110,7 +135,7 @@ ul{
     font-family:Raleway;
     font-size:45px;
 }
-.team{
+#team{
     background-color: #f8f8f8;
     height:1000px;
     text-align: center;
@@ -164,4 +189,119 @@ ul{
     display: inline-block;
     font-family: Raleway;
     letter-spacing:3px;
+}
+.container3{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    height:800px;
+}
+.item4{
+    width:500px;
+    height: 250px;
+    margin-bottom:50px;
+    box-shadow:10px 10px 15px 1px #292929;
+    font-family:Raleway;
+    padding:40px;
+    display:flex;
+    flex-direction: row;
+}
+.img2{
+    border-radius: 50%;
+}
+.title{
+    margin-right:10px;
+    text-align:center;
+    letter-spacing: 2px;
+    font-family:Yatra One;
+}
+
+#contact{
+    background-color: #333;
+    color:white;
+    height:1000px;
+}
+table{
+    margin:40px;
+    
+}
+tr td{
+    font-family: Nunito,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size:17px;
+    line-height: 25px;
+}
+.container4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.item5{
+    width:300px;
+    font-family: Raleway;
+    font-size:15px;
+    line-height: 20px;
+}
+#end{
+    margin:70px;
+   margin-bottom: 0px;
+}
+#t{
+    padding-left:600px;
+}
+#endh{
+    color:darkgray;
+}
+.last{
+    border:3px solid darkgrey;
+    width:70px;
+    text-align:center;
+    margin-left:600px;
+    padding:10px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.last:hover{
+    border:3px solid whitesmoke;
+}
+.item4:hover{
+    background-color:black;
+    color:white;
+    transform: translateX(-20px) translateY(-20px);
+    box-shadow:15px 15px 15px 1px #292929;
+    transition:1s;
+}
+.button:hover{
+    background-color:whitesmoke;
+    color:goldenrod;
+    cursor:pointer;
+    transition:1s;
+}
+.nav{
+    text-decoration: none;
+    color:black;
+    padding:40px;
+    font-family:Raleway;
+}
+
+.j{
+    font-family:Raleway; 
+}
+
+.item:hover{
+    background-color:crimson;
+}
+.subitem>li:hover{
+    background-color: #f8f8f8;
+    border:3px solid black;
+    cursor: pointer;
+    color:black;
+}
+.sub-subitem>li:hover{
+    background-color: #f8f8f8;
+    border:3px solid black;
 }
