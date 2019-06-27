@@ -1,6 +1,7 @@
 body{
     margin:0px;
 }
+
 li ul{
     display: none;
 }
@@ -41,7 +42,7 @@ ul{
     left:150px;
     top:1px;
 }
-#hn{
+.hn{
     display:inline-block;
 }
 .navbar{
@@ -49,8 +50,20 @@ ul{
     top:0px;
     z-index:3;
     border:1px solid gainsboro;
-    height:60px;
+    height:82px;
+    padding-top:20px;
     background-color: white;
+}
+#home{
+    height: 600px;
+    background-image: url(blackboard.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family:'Clouds of Despair LSF';
+    font-size:25px;
+    color:white;
+    padding-left:80px;
+    padding-top:70px;
 }
 #cmcs{
     background-color:white;
@@ -190,6 +203,10 @@ ul{
     font-family: Raleway;
     letter-spacing:3px;
 }
+#reviews{
+    height:1000px;
+    text-align:center;
+}
 .container3{
     display:flex;
     flex-direction: row;
@@ -304,4 +321,197 @@ a{
 .sub-subitem>li:hover{
     background-color: #f8f8f8;
     border:3px solid black;
+}
+
+.anim{
+    animation-name:slide;
+    animation-duration: 10s;
+    animation-iteration-count:10;
+    display:inline;
+}
+@keyframes slide{
+    from{
+        margin-left:40px;
+        font-size:25px;
+        color:white;
+    }
+    to{
+        margin-left:180px;
+        font-size:50px;
+        color:salmon;
+    }
+}
+.cb{
+    margin-left:100px;
+}
+.cbb{
+    float:right;
+    margin-right:100px;
+    display:flex;
+    flex-direction: column;
+    font-size:20px;
+    color:coral;
+    animation-name:rotate;
+    animation-duration:5s;
+    animation-iteration-count:1;
+}
+@keyframes rotate{
+    from{
+        display:none;
+        margin-top:0px;
+        transform:rotateZ(0deg)
+    }
+    to{
+        display: block;
+        margin-top:150px;
+        transform:rotateZ(720deg)
+    }
+}
+
+@media (max-width:1300px) and (min-width: 500px){
+    
+    img.hn{width:50px;}
+    #home{
+        font-size:15px;
+        height:50%;
+    }
+    .cbb{
+        font-size:15px;
+        margin-left:50px;
+    }
+    #team{
+        height:50%;
+    }
+    .container3{
+        height: 50%;
+    }
+    #contact{
+        height:50%;
+    }
+    .container4{
+        padding-left:10px;
+    }
+    table{
+        height:50%;
+    }
+    #t{
+        padding-left:50px;
+    }
+    .last{
+        margin-left:200px;
+    }
+    
+}
+@media (max-width:1300px) and (min-width:850px){
+    #t{
+        padding-left:400px;
+    }
+    .last{
+        margin-left:500px;
+    }
+    
+}
+@media (max-width:956px) and (min-width:768px){
+    .last{
+        margin-left:400px;
+    }
+    img.cb{width:25px;}
+}
+@media (max-width:755px) and (min-width:500px){
+    #content{
+        font-size:10px;
+    }
+    #contimg{
+        width:100px;
+    }
+    img.cb{width:25px;}
+}
+@media (max-width:1257px) and (min-width:850px){
+    @keyframes slide{
+        from{
+            margin-left:40px;
+            font-size:20px;
+            color:white;
+        }
+        to{
+            margin-left:80px;
+            font-size:30px;
+            color:salmon;
+        }
+    }
+    @keyframes rotate{
+        from{
+            font-size:10px;
+            margin-top:0px;
+            transform:rotateZ(0deg)
+        }
+        to{
+            font-size:15px;
+            margin-top:150px;
+            transform:rotateZ(720deg)
+        }
+    }
+}
+@media (max-width:849px) and (min-width:500px){
+    @keyframes slide{
+        from{
+            margin-left:20px;
+            font-size:10px;
+            color:white;
+        }
+        to{
+            margin-left:40px;
+            font-size:15px;
+            color:salmon;
+        }
+    }
+    @keyframes rotate{
+        from{ 
+            font-size:5px;
+            margin-top:0px;
+            transform:rotateZ(0deg)
+        }
+        to{
+            font-size:10px;
+            margin-top:150px;
+            transform:rotateZ(720deg)
+        }
+    }
+    .cbb{
+        font-size:10px;
+        margin-left:70px;
+    }
+}
+@media(max-width:968px) and (min-width:807px){
+    .item{
+        font-size:15px;
+    }
+    .subitem{
+        font-size:15px;
+    }
+    .sub-subitem{
+        font-size:15px;
+    }
+}
+@media(max-width:807px) and (min-width:647px){
+    .item{
+        font-size:10px;
+    }
+    .subitem{
+        font-size:10px;
+    }
+    .sub-subitem{
+        font-size:10px;
+    }
+}
+@media(max-width:647px) and (min-width:500px){
+    .item{
+        font-size:7px;
+    }
+    .subitem{
+        font-size:7px;
+    }
+    .sub-subitem{
+        font-size:7px;
+    }
 }
