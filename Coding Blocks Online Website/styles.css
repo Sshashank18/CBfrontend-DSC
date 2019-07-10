@@ -118,11 +118,12 @@ ul{
     overflow: hidden;
 }
 .button{
+    text-decoration:none;
     width:200px;
     height:50px;
-    padding-top: 15px;
     text-align:center;
     margin:40px;
+    margin-top:10px;
     margin-left:50px;
     font-size:25px;
     letter-spacing: 1px;
