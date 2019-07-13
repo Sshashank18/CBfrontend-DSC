@@ -279,9 +279,14 @@ tr td{
     margin-left:600px;
     padding:10px;
 }
+
 a{
     text-decoration: none;
     color:white;
+}
+.anav:hover{
+    text-decoration: none;
+    color:black;
 }
 .last:hover{
     border:3px solid whitesmoke;
@@ -322,12 +327,13 @@ a{
 .sub-subitem>li:hover{
     background-color: #f8f8f8;
     border:3px solid black;
+
 }
 
 .anim{
     animation-name:slide;
     animation-duration: 10s;
-    animation-iteration-count:10;
+    animation-iteration-count:5;
     display:inline;
 }
 @keyframes slide{
